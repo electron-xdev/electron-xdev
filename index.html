@@ -23,6 +23,13 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/timeline.css">
 
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_TxvhbJI2xcW7KyWT2QfTV");
+        })();
+    </script>
 </head>
 <body id="top">
 
@@ -71,8 +78,8 @@
                 <div class="col-md-12">
                     <div class="block">
                         <h1>Formation Full Stack Web</h1>
-                        <h2>Apprenez a créer et a déployer des applications web modern en utilisant les meilleur
-                            technologie dissponible du moment en 13 semaines</h2>
+                        <h2>Apprenez à concevoir et à déployer des applications web modernes <br> en utilisant les meilleures
+                            technologies disponibles en seulement 13 semaines</h2>
                         <div class="buttons">
                             <a href="#" class="btn btn-learn">S'inscrire</a>
                         </div>
@@ -313,23 +320,20 @@
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-6">
                     <div class="block wow fadeInLeft" data-wow-delay=".3s">
-                        <img src="img/meme.jpg" alt="" width="300" height="360">
+                        <img src="img/meme.jpg" alt="">
                         <div class="team-overlay">
                             <h3>Ilyes Hammadi <span>Full Stack Web Developer</span></h3>
-                            <span class="icon"><i class="ion-quote"></i></span>
-                            <p>Passionate,enthusiastic, highly creative and results-driven web developer and lifelong
-                                learner.</p>
                             <div class="row">
-                                <div class="col-md-3 col-md-offset-1">
+                                <div class="col-xs-3 col-xs-offset-1">
                                     <a href="https://twitter.com/HammadiIlyes" target="_blank"><span class="icon"><i
                                             class="ion-social-twitter"></i></span></a>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-xs-3">
                                     <a href="https://github.com/Ilyes-Hammadi" target="_blank"><span class="icon"><i
                                             class="ion-social-github"></i></span></a>
 
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-xs-3">
                                     <a href="https://dz.linkedin.com/in/ilyeshammadi" target="_blank"><span
                                             class="icon"><i class="ion-social-linkedin"></i></span></a>
 
@@ -340,25 +344,17 @@
                 </div>
                 <div class="col-md-4  col-sm-4 col-xs-6">
                     <div class="block wow fadeInLeft" data-wow-delay=".6s">
-                        <img src="img/team-img2.jpg" alt="" width="300" height="360">
+                        <img src="img/bachir.jpg" alt="">
                         <div class="team-overlay">
-                            <h3>ROBERT SMITH <span>Product Designer</span></h3>
-                            <span class="icon"><i class="ion-quote"></i></span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+                            <h3>Mostafa Bachir<span>Full Stack Web Developer</span></h3>
                             <div class="row">
-                                <div class="col-md-3 col-md-offset-1">
-                                    <a href="#" target="_blank"><span class="icon"><i
+                                <div class="col-xs-3 col-xs-offset-1">
+                                    <a href="https://twitter.com/mostafabachir" target="_blank"><span class="icon"><i
                                             class="ion-social-twitter"></i></span></a>
                                 </div>
-                                <div class="col-md-3">
-                                    <a href="#" target="_blank"><span class="icon"><i
+                                <div class="col-xs-3">
+                                    <a href="https://github.com/mostafaBachir" target="_blank"><span class="icon"><i
                                             class="ion-social-github"></i></span></a>
-
-                                </div>
-                                <div class="col-md-3">
-                                    <a href="#" target="_blank"><span
-                                            class="icon"><i class="ion-social-linkedin"></i></span></a>
 
                                 </div>
                             </div>
@@ -420,6 +416,7 @@
             <div class="row">
                 <div class="title">
                     <h2>Contactez nous</h2>
+                    <p>electron.xdev@gmail.com</p>
                 </div>
                 <div class="col-md-6 col">
                     <!-- map -->
@@ -429,12 +426,13 @@
 
                 </div>
                 <div class="col-md-6">
-                    <form>
-                        <input type="text" class="form-control" placeholder="Nom">
-                        <input type="text" class="form-control" placeholder="Email">
-                        <textarea class="form-control" rows="3" placeholder="Message"></textarea>
-                        <button class="btn btn-default" type="submit">envoyer</button>
-                    </form>
+                    <div>
+                        <input id="name" type="text" class="form-control" placeholder="Nom" required>
+                        <input id="email" type="email" class="form-control" placeholder="Email" required>
+                        <textarea id="message" class="form-control" rows="3" placeholder="Message" required></textarea>
+                        <button id="submit" class="btn btn-default" type="submit">envoyer</button>
+                        <div id="email-res"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -445,7 +443,7 @@
                 <div class="col-md-12">
                     <div class="block">
                         <h4>X-Dev</h4>
-                        <p>All rights reserved © 2015</p>
+                        <p>All rights reserved © 2017</p>
                     </div>
                 </div>
             </div>

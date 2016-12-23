@@ -162,4 +162,32 @@ $(document).ready(function () {
     }())
 
 
+    // Email
+
+    $('#submit').click(function () {
+        var name = $('#name').val();
+        var email = $('#email').val();
+        var message = $('#message').val();
+
+        console.log(name);
+        console.log(email);
+        console.log(message);
+
+        emailjs.send("gmail", "template_bhooHTBD", {
+            from_name: name,
+            from_email: email,
+            message_html: message
+        }).then(function (response) {
+            console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+            $('#name').val('');
+            $('#email').val('');
+            $('#message').val('');
+            $('#email-res').html('<p>Votre message a bien été envoyé</p>')
+        }, function (err) {
+            console.log("FAILED. error=", err);
+            $('#email-res').val("FAILED. error=" + err)
+        });
+
+    })
+
 });

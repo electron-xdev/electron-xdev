@@ -307,6 +307,7 @@ header .navbar {
 
 #banner .block .buttons {
     margin-top: 40px;
+    text-align: center;
 }
 
 #banner .block .buttons a:first-child {
@@ -875,8 +876,8 @@ header .navbar {
     background: #f9f9f9;
 }
 
-#contact-form form input,
-#contact-form form textarea {
+#contact-form div input,
+#contact-form div textarea {
     padding: 24px 20px 0;
     border-color: #80d6a3;
     border-radius: 5px;
@@ -885,18 +886,18 @@ header .navbar {
     box-shadow: none;
 }
 
-#contact-form form input {
+#contact-form div input {
     margin-bottom: 15px;
     padding: 24px 27px;
 }
 
-#contact-form form textarea {
+#contact-form div textarea {
     margin-bottom: 28px;
     min-height: 172px;
     resize: none;
 }
 
-#contact-form form button {
+#contact-form div button {
     float: right;
     color: #fff;
     font-size: 16px;
@@ -908,7 +909,7 @@ header .navbar {
     transition: 0.3s;
 }
 
-#contact-form form button:hover {
+#contact-form div button:hover {
     background: none;
     color: #80d6a3;
     border-color: #80d6a3;
@@ -1486,4 +1487,8 @@ header .navbar {
 .btn-join-container {
     text-align: center;
     margin-top: 100px;
+}
+
+#email-res p{
+    font-size: 19px;
 }
